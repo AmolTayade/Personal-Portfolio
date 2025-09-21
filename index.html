@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="utility.css">
+
+  <!-- FAVICON -->
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16x16.png">
+  <link rel="manifest" href="assets/site.webmanifest">
+
+  <!-- Boxicons CDN -->
+<link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=sunny" />
+
+
+  <title>Portfolio</title>
+</head>
+<body>
+  <!-- Floating Action Button -->
+<div class="FAB" onclick="toggleFAB()">
+  <i class='bx bx-menu'></i>
+</div>
+
+<!-- FAB Expanding Menu -->
+<!-- FAB Expanding Menu -->
+<div class="fab-menu" id="fabMenu">
+  <a href="#home"><i class='bx bx-home'></i> Home</a>
+  <a href="#about"><i class='bx bx-user'></i> About</a>
+  <a href="#skills"><i class='bx bx-code-alt'></i> Skills</a>
+  <a href="#projects"><i class='bx bx-folder'></i> Projects</a>
+  <a href="#contact"><i class='bx bx-envelope'></i> Contact</a>
+  <!-- Light/Dark Toggle -->
+  <a href="javascript:void(0);" class="LD-toggle-fab">
+    <img class="moon" src="assets/moon.svg" alt="Dark Mode"> 
+    <span class="material-symbols-outlined sun">sunny</span>
+  </a>
+</div>
+
+
+  <!-- Header -->
+  <header>
+    <h1>Portfolio</h1>
+    <nav>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li class="LD-toggle"><img class="moon" src="assets/moon.svg"> <span class="material-symbols-outlined sun">
+            sunny
+            </span></li>
+      </ul>
+    </nav>
+  </header>
+  <div class="body">
+  <!-- Main Section -->
+  <main id="home" class="fade-in-up">
+    <div class="text">
+      <h2> Hi,I'm Amol Subhash Tayade</h2>
+      <p>
+        Enthusiastic frontend developer passionate about building responsive 
+        and user-friendly websites. I enjoy creating clean UI and interactive 
+        designs that deliver smooth user experiences.
+      </p>
+      <a class="dc" href="https://drive.google.com/file/d/1GUUqZQG4L8TQJANMF5cb0goitGCkBBuy/view" class="download-btn">Download Resume</a>
+      
+      <div class="logo social">
+        <a class="logo instagram" href="https://www.instagram.com/amol_tayade_06/"><i class='bx bxl-instagram'></i></a>
+        <a class="logo linkedin" href="https://www.linkedin.com/in/amol-tayade-153991292"><i class='bx bxl-linkedin'></i></a>
+        <a class="logo github" href="https://github.com/AmolTayade"><i class='bx bxl-github'></i></a>
+        <a class="logo facebook" href="https://www.facebook.com/amolsubhash.tayade"><i class='bx bxl-facebook'></i></a>
+      </div>
+      
+    </div>
+
+    <div class="profile">
+      <div class="profile-border">
+        <img src='https://avataaars.io/?avatarStyle=Transparent&topType=ShortHairShortCurly&accessoriesType=Blank&hairColor=Black&facialHairType=BeardMedium&facialHairColor=BrownDark&clotheType=BlazerSweater&eyeType=Happy&eyebrowType=DefaultNatural&mouthType=Default&skinColor=Light'/>
+      </div>
+    </div>
+  </main>
+  <section id="about" class="about fade-in-up">
+    <div class="about-container">
+      <div class="about-img">
+        <script src="https://unpkg.com/@lottiefiles/dotlottie-wc@0.6.2/dist/dotlottie-wc.js" type="module"></script>
+<dotlottie-wc src="https://lottie.host/4b654a4f-1ec5-4228-a8de-c9ca6d0f3049/gavpXlBrr1.lottie" style="width: 450px;height: 450px;" speed="1" autoplay loop></dotlottie-wc>
+      </div>
+  
+      <div class="about-text">
+        <h2>About Me</h2>
+        <p class="p1">
+          Hi, I’m Amol, a passionate Front-End Developer and Information Technology student. 
+          I enjoy crafting clean, responsive, and visually appealing websites that deliver 
+          smooth user experiences.
+        </p>
+        <p class="p2">
+          Currently pursuing my B.E. in IT at Nutan Maharashtra Institute of Engineering 
+          and Technology, I focus on learning modern web technologies and building 
+          projects that bring ideas to life. I also plan to explore backend development 
+          in the near future to become a full-stack developer.
+        </p>
+        <p class="p3">
+          Beyond coding, I enjoy exploring creative designs, problem-solving, 
+          and constantly improving myself through new challenges.
+        </p>
+      </div>
+    </div>
+  </section>
+  <section id="skills" class="fade-in-up">
+    <h2>My Skills</h2>
+    <div class="skill-cards hflex">
+  
+      <!-- Scripting Languages -->
+      <div class="skill-card sc vflex">
+        <h3>scripting-language</h3>
+        <div class="skills hflex">
+          <div class="skill center"><img src="assets/html-1.svg" alt="html">HTML</div>
+          <div class="skill center"><img src="assets/css-3.svg" alt="css" >CSS</div>
+          <div class="skill center"> <img src="assets/javascript-1.svg" alt="js"> JavaScript</div>
+        </div>
+      </div>
+      <!-- Frameworks -->
+      <div class="skill-card fw vflex">
+        <h3>Frameworks</h3>
+        <div class="skills hflex">
+          <div class="skill center"> <img src="https://getbootstrap.com/docs/5.3/assets/brand/bootstrap-logo-shadow.png" alt="Bootstrap"> Bootstrap</div>
+        </div>
+      </div>
+  
+      <!-- Database -->
+      <div class="skill-card db vflex">
+        <h3>Database</h3>
+        <div class="skills hflex">
+          <div class="skill center"> <img src="assets/mysql-logo-pure.svg" alt="SQL"> SQL</div>
+        </div>
+      </div>
+  
+      <!-- Programming Languages -->
+      <div class="skill-card pl vflex">
+        <h3>Programming Languages</h3>
+        <div class="skills hflex">
+          <div class="skill center"> <img src="assets/c.svg" alt="c++"> C++</div>
+          <div class="skill center"> <img src="assets/C-programming.webp" alt="c"> C</div>
+        </div>
+      </div>
+    </div>
+    </section>
+  
+    <section id="contact" class="fade-in-up">
+      <h2>Contact Me</h2>
+      <form class="contact-form" action="https://formspree.io/f/mqadbkpd" method="POST">
+        <input class="inp1" type="text" placeholder="Enter Your Name" required>
+        <input class="inp2" type="email" placeholder="Enter Your Email" required>
+        <textarea class="inp3" placeholder="Enter Your Message" rows="5" required></textarea>
+        <button type="submit">Submit</button>
+      </form>
+    </section>
+  </div>
+    
+    
+  
+
+  
+  <script src="https://unpkg.com/scrollreveal"></script>
+  <script src="script.js"></script>
+
+</body>
+</html>
+
+
